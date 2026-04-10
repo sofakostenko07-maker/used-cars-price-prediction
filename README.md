@@ -61,7 +61,7 @@ Additional processing:
   - most frequent imputation
  
 - Catboost categorical features:
-  - imputed Nan values with *missing* values
+  - imputed Nan values with *missing* category
 
 - Special handling:
   - log transformation applied to `odometer` (linear models)
@@ -155,7 +155,7 @@ Strong evidence that outlier removal is critical
 
 - Stratified split gives stable results  
 - Random split resulted in slightly lower RMSE (~3341), but:
-  - result just shows that there are cheaper cars in test set
+  - likely caused by different price distribution in the test set
   - overall, random split is less reliable due to uneven price distribution  
 
 ---
@@ -175,12 +175,20 @@ Key insights:
 
 ---
 
-## Notes
+## How to Run
 
-- Dataset is not included due to access restrictions  
-- To run the project, configure Kaggle API credentials  
+1. Clone the repository:
+   git clone https://github.com/yourusername/used-cars-price-prediction.git
 
----
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Set up Kaggle API credentials:
+   - Place your kaggle.json file in the appropriate directory
+
+4. Run the notebook:
+   - Open the notebook and execute all cells
+
 
 ## Tech Stack
 
