@@ -1,6 +1,9 @@
 # Used Cars Price Prediction
 
-## Overview
+**Open the full notebook in Google Colab (with outputs, plots, SHAP):**  
+https://colab.research.google.com/drive/1hdBvjhpOE68C2R61fKbvcVAqZNgPyCBk?usp=sharing
+
+## Project Overview
 This project aims to predict used car prices using a Craigslist dataset from Kaggle.  
 It is a regression task with a full machine learning pipeline, including data cleaning, feature engineering, model selection, tuning, and interpretation.
 
@@ -174,20 +177,6 @@ Key insights:
 - Total features: ~5000+
 
 ---
-
-## How to Run
-
-1. Clone the repository:
-   git clone https://github.com/yourusername/used-cars-price-prediction.git
-
-2. Install dependencies:
-   pip install -r requirements.txt
-
-3. Set up Kaggle API credentials:
-   - Place your kaggle.json file in the appropriate directory
-
-4. Run the notebook:
-   - Open the notebook and execute all cells
 
 
 ## Tech Stack
