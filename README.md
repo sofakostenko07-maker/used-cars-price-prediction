@@ -136,7 +136,7 @@ Final choice:
 
 - CV RMSE: ~3306  
 - Test RMSE: **~4188**
-- 
+
 The model does not generalize perfectly, but this behavior is expected for tree‑based boosting models trained on noisy, skewed price data. The presence of rare high‑value cars naturally increases test error.
 
 ---
@@ -148,7 +148,7 @@ The model does not generalize perfectly, but this behavior is expected for tree�
 - Without outliers:
   - RMSE ≈ 4188
 - With outliers:
-  - RMSE ≈ 11362260 
+  - RMSE skyrockets to ~11M due to extreme price anomalies 
 
 Strong evidence that outlier removal is critical
 
