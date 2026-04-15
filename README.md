@@ -88,9 +88,9 @@ Reason: price distribution is uneven, balanced train/test sets are wanted.
 Compared models:
 
 - DummyRegressor (baseline)
-- Linear Regression
-- Decision Tree
-- Gradient Boosting
+- Linear Regression (log target)
+- Decision Tree (log target)
+- Gradient Boosting (log target)
 - XGBoost
 - CatBoost
 
@@ -132,9 +132,9 @@ Final choice:
 ## Final Result
 
 - CV RMSE: ~3306  
-- Test RMSE: **~3457**
-
-The model generalizes well (train ≈ test).
+- Test RMSE: **~4188**
+- 
+The model does not generalize perfectly, but this behavior is expected for tree‑based boosting models trained on noisy, skewed price data. The presence of rare high‑value cars naturally increases test error.
 
 ---
 
@@ -143,9 +143,9 @@ The model generalizes well (train ≈ test).
 ### Outliers impact
 
 - Without outliers:
-  - RMSE ≈ 3457
+  - RMSE ≈ 4188
 - With outliers:
-  - RMSE ≈ 11,362,263 
+  - RMSE ≈ 11362260 
 
 Strong evidence that outlier removal is critical
 
@@ -154,7 +154,7 @@ Strong evidence that outlier removal is critical
 ### Split strategy impact
 
 - Stratified split gives stable results  
-- Random split resulted in slightly lower RMSE (~3341), but:
+- Random split resulted in slightly lower RMSE (~4145), but:
   - likely caused by different price distribution in the test set
   - overall, random split is less reliable due to uneven price distribution  
 
