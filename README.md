@@ -105,7 +105,7 @@ Results:
 | Linear Regression  | 5019 |
 | Decision Tree      | 6653 |
 | Gradient Boosting  | 5431 |
-| XGBoost            | 4355 |
+| XGBoost            | 4085 |
 | CatBoost           | 4034 |
 
 ---
